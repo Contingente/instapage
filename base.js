@@ -6,7 +6,7 @@
 		var __variables_tmp;
 		if( __debug ){ console.log(__variables); }
 		for(var __variables_i = 0, __variables_t = __variables.length; __variables_i < __variables_t; __variables_i++){
-			__variables_tmp = __variables[ __variables_i ] ]
+			__variables_tmp = __variables[ __variables_i ] ];
 			if( !window[ __variables_tmp ]  ){ window[ __variables_tmp ] = ""; }
 			if( __debug ){
 				console.log("Var: "+__variables_tmp, window[ __variables_tmp ] );
