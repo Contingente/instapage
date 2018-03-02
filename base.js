@@ -1,10 +1,16 @@
 ;(function(window){
 
-	window.IniciarInstapage = function(){
+	window.IniciarInstapage = function(__debug){
 		
 		var __variables = ("ijQuery,_codigoAnalytics,_codigoPixelFacebook,_headerEstatico,_bloqueSlider,_bloqueYoutube,_bloqueYoutubeID,_crmURL,_crmCampos,_crmAdicionales,_validacionesCampoRut,_validacionesFormulario,_traduccionesFormularios,_callbackCargado,_callbackFormulario,_callbackInicio").split(",");
+		var __variables_tmp;
+		if( __debug ){ console.log(__variables); }
 		for(var __variables_i = 0, __variables_t = __variables.length; __variables_i < __variables_t; __variables_i++){
-			if( !window[ __variables[ __variables_i ] ] ){ !window[ __variables[ __variables_i ] ] = ""; }
+			__variables_tmp = __variables[ __variables_i ] ]
+			if( !window[ __variables_tmp ]  ){ window[ __variables_tmp ] = ""; }
+			if( __debug ){
+				console.log("Var: "+__variables_tmp, window[ __variables_tmp ] );
+			} 
 		}
 
 		// A) ANTES DE TODO
